@@ -1,0 +1,31 @@
+{
+  "name": "apinotifications",
+  "version": "1.0.0",
+  "description": "API to send Notificaitons",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurav1005/apiNotifications.git"
+  },
+  "keywords": [
+    "Notifications",
+    "API"
+  ],
+  "author": "saurav1005@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurav1005/apiNotifications/issues"
+  },
+  "homepage": "https://github.com/saurav1005/apiNotifications#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  }
+}
