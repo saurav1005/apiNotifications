@@ -1,4 +1,4 @@
-exports.ENV_PORT = process.env.PORT || 8080;
+exports.ENV_PORT = 8000;
 exports.ENVIRONMENT = process.env.NODE_ENV !== 'production';
 
 const logLevels = {
@@ -27,5 +27,16 @@ const errorMessages = {
   ERROR_INVALIDBCCEMAIL: 'Email Id(s) in BCc is invalid',
   ERROR_INVALIDSUBJECT: 'Email Subject is Mandatory',
 };
-
 exports.ERROR_INPUTINVALID = errorMessages;
+
+exports.MAILGUN_EMAILURL = process.env.MAILGUN_EMAILURL;
+
+exports.MAILGUN_API_KEY = process.env.MAILGUN_API_KEY;
+
+exports.MAILGUN_FROMUSER = process.env.MAILGUN_FROMUSER;
+
+exports.MAILGUN_MSGS = {
+  ERROR_INVALIDMAILGUNRESP:
+    'Invalid Email or check with your provider on the reason for this issue',
+  SUCCESS_MAILGUNRESP: 'Mail Sent Successfully',
+};
