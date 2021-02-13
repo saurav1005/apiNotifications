@@ -1,0 +1,13 @@
+# Coverage directory used by tools
+coverage
+
+#other files
+.gitignore
+LICENSE
+node_modules
+README.md
+.eslintrc.js
+Dockerfile
+.git
+.dockerignore
+.sample-env

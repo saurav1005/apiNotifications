@@ -1,0 +1,44 @@
+{
+  "name": "apinotifications",
+  "version": "1.0.0",
+  "description": "API to send Notificaitons",
+  "main": "index.js",
+  "scripts": {
+    "start": " node server.js",
+    "start:dev": " nodemon server.js",
+    "start:prod": "env-cmd -f .env node server.js ",
+    "test": "jest --setupFiles dotenv/config",
+    "coverage": "npm run test -- --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurav1005/apiNotifications.git"
+  },
+  "keywords": [
+    "Notifications",
+    "API"
+  ],
+  "author": "saurav1005@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurav1005/apiNotifications/issues"
+  },
+  "homepage": "https://github.com/saurav1005/apiNotifications#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
