@@ -34,7 +34,7 @@ Script below to run for local testing with hard-coded environment properties in 
 Run in watch mode
 
 ```sh
-npm start:dev
+npm run start:dev
 ```
 
 Run in normal mode
@@ -46,7 +46,18 @@ npm start
 For prod create .env file with required config as in .sample-env
 
 ```sh
-npm start:prod
+npm run start:prod
+```
+CURL for local testing. The providers use sandbox environment thus only author's email id works in this environment.
+```sh
+curl --location --request POST 'http://localhost:8000/api/v1/notifications/email' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"to": ["saurav1005@gmail.com"],
+"cc": [ "saurav1005@gmail.com"],
+"subject": "This is test",
+"text": "This is amazing"
+}'
 ```
 
 ## Tests
