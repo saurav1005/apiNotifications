@@ -118,4 +118,4 @@ curl --location --request POST 'https://notificationspocapi.azurewebsites.net/ap
 - Move code for sendGridService and mailGunService to monorepos for creating separate adaptor libraries as reusable assets for other apps
 - Use of moment library for custom date logging for the framework. Configure file based logging
 - Other scripts for pre-commit hooks configuration like eslint config and prettier
-- Deploy code to Azure/other cloud with multi-container hosting for HA and performance
+- Deploy code to Azure/other cloud with multi-container hosting for HA and performance. Pipeline creation for build and release.
